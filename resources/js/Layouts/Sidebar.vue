@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useToggleSidebar } from "@/Store/useToggleSideBar";
+import { Link } from "@inertiajs/vue3";
 import {
     LayoutDashboard,
     Computer,
@@ -77,7 +78,7 @@ const sidebar = useToggleSidebar();
                                 class="text-gray-500 w-5 dark:text-green-300"
                             />
                             <span class="dark:text-green-200 text-sm"
-                                >User</span
+                                >Employee</span
                             >
                         </li>
                         <li
@@ -101,16 +102,18 @@ const sidebar = useToggleSidebar();
                             >
                         </li>
                     </ul>
-                    <ul class="absolute flex flex-col gap-4 mb-8 bottom-0">
-                        <li
-                            class="flex items-center space-x-2 text-gray-700 cursor-pointer font-light"
-                        >
-                            <LogOut
-                                class="text-gray-500 w-5 dark:text-green-300"
-                            /><span class="dark:text-green-200 text-sm"
-                                >Logout</span
+                    <ul class="absolute flex flex-col gap-4 mb-8 bottom-8">
+                        <Link :href="route('logout')" method="post" as="button">
+                            <li
+                                class="flex items-center space-x-2 text-gray-700 cursor-pointer font-light"
                             >
-                        </li>
+                                <LogOut
+                                    class="text-gray-500 w-5 dark:text-green-300"
+                                /><span class="dark:text-green-200 text-sm"
+                                    >Logout</span
+                                >
+                            </li>
+                        </Link>
                     </ul>
                 </div>
             </div>

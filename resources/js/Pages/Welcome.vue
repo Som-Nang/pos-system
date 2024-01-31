@@ -10,6 +10,7 @@ import {
     ChevronRight,
     Bookmark,
     FileCheck2,
+    MoreHorizontal,
 } from "lucide-vue-next";
 </script>
 
@@ -89,7 +90,7 @@ import {
                         <p class="text-gray-700 font-semibold text-3xl">31</p>
                     </div>
                 </div>
-                <div class="flex flex-col gap-2 w-full mt-4">
+                <div class="flex flex-col gap-2 w-full mt-3">
                     <p
                         class="text-sm text-gray-700 dark:text-white font-semibold"
                     >
@@ -163,23 +164,23 @@ import {
                     </div>
                 </div>
                 <div
-                    class="flex gap-2 w-full flex-wrap items-center justify-center"
+                    class="flex gap-2 w-full flex-wrap xl:grid xl:grid-cols-2 items-center justify-center"
                 >
                     <div
-                        class="flex relative flex-col gap-2 justify-center items-center dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-6"
+                        class="flex relative flex-row w-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
                     >
                         <div class="">
                             <img
-                                class="object-cover w-24 h-24 rounded-full"
+                                class="object-cover w-14 h-12 rounded-full"
                                 src="https://www.unicef.org/cambodia/sites/unicef.org.cambodia/files/styles/hero_tablet/public/ED_UNICEF_BK_Dec%2005%2C%202017_0086.jpg.webp?itok=TuYJhpRA"
                                 alt=""
                             />
                         </div>
                         <div
-                            class="flex flex-col dark:text-green-500 justify-center items-center"
+                            class="relative flex flex-col dark:text-green-500 justify-center items-start w-full"
                         >
                             <p
-                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light"
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light hover:text-green-500 dark:hover:text-gray-500 cursor-pointer"
                             >
                                 Din Somnang
                             </p>
@@ -188,9 +189,19 @@ import {
                             >
                                 Seller
                             </p>
+                            <div
+                                class="flex absolute right-0 flex-col dark:text-green-500 justify-center items-center"
+                            >
+                                <p
+                                    class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                                >
+                                    Heired:
+                                    <span class="text-[10px]">March 2023</span>
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
+                        <!-- <div
+                            class="hidden xl:flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
                         >
                             <p
                                 class="text-[10px] text-red-400 dark:text-red-500 font-light"
@@ -198,24 +209,24 @@ import {
                                 Heired:
                                 <span class="text-[10px]">March 2023</span>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div
-                        class="flex relative flex-col gap-2 justify-center items-center dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-6"
+                        class="flex relative flex-row w-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
                     >
                         <div class="">
                             <img
-                                class="object-cover w-24 h-24 rounded-full"
+                                class="object-cover w-14 h-12 rounded-full"
                                 src="https://www.unicef.org/cambodia/sites/unicef.org.cambodia/files/styles/hero_tablet/public/ED_UNICEF_BK_Dec%2005%2C%202017_0086.jpg.webp?itok=TuYJhpRA"
                                 alt=""
                             />
                         </div>
                         <div
-                            class="flex flex-col dark:text-green-500 justify-center items-center"
+                            class="relative flex flex-col dark:text-green-500 justify-center items-start w-full"
                         >
                             <p
-                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light"
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light hover:text-green-500 dark:hover:text-gray-500 cursor-pointer"
                             >
                                 Din Somnang
                             </p>
@@ -224,9 +235,19 @@ import {
                             >
                                 Seller
                             </p>
+                            <div
+                                class="flex absolute right-0 flex-col dark:text-green-500 justify-center items-center"
+                            >
+                                <p
+                                    class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                                >
+                                    Heired:
+                                    <span class="text-[10px]">March 2023</span>
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
+                        <!-- <div
+                            class="hidden xl:flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
                         >
                             <p
                                 class="text-[10px] text-red-400 dark:text-red-500 font-light"
@@ -234,23 +255,24 @@ import {
                                 Heired:
                                 <span class="text-[10px]">March 2023</span>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
+
                     <div
-                        class="flex relative flex-col gap-2 justify-center items-center dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-6"
+                        class="flex relative flex-row w-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
                     >
                         <div class="">
                             <img
-                                class="object-cover w-24 h-24 rounded-full"
+                                class="object-cover w-14 h-12 rounded-full"
                                 src="https://www.unicef.org/cambodia/sites/unicef.org.cambodia/files/styles/hero_tablet/public/ED_UNICEF_BK_Dec%2005%2C%202017_0086.jpg.webp?itok=TuYJhpRA"
                                 alt=""
                             />
                         </div>
                         <div
-                            class="flex flex-col dark:text-green-500 justify-center items-center"
+                            class="relative flex flex-col dark:text-green-500 justify-center items-start w-full"
                         >
                             <p
-                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light"
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light hover:text-green-500 dark:hover:text-gray-500 cursor-pointer"
                             >
                                 Din Somnang
                             </p>
@@ -259,9 +281,19 @@ import {
                             >
                                 Seller
                             </p>
+                            <div
+                                class="flex absolute right-0 flex-col dark:text-green-500 justify-center items-center"
+                            >
+                                <p
+                                    class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                                >
+                                    Heired:
+                                    <span class="text-[10px]">March 2023</span>
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
+                        <!-- <div
+                            class="hidden xl:flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
                         >
                             <p
                                 class="text-[10px] text-red-400 dark:text-red-500 font-light"
@@ -269,23 +301,24 @@ import {
                                 Heired:
                                 <span class="text-[10px]">March 2023</span>
                             </p>
-                        </div>
+                        </div> -->
                     </div>
+
                     <div
-                        class="flex relative flex-col gap-2 justify-center items-center dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-6"
+                        class="flex relative flex-row w-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
                     >
                         <div class="">
                             <img
-                                class="object-cover w-24 h-24 rounded-full"
+                                class="object-cover w-14 h-12 rounded-full"
                                 src="https://www.unicef.org/cambodia/sites/unicef.org.cambodia/files/styles/hero_tablet/public/ED_UNICEF_BK_Dec%2005%2C%202017_0086.jpg.webp?itok=TuYJhpRA"
                                 alt=""
                             />
                         </div>
                         <div
-                            class="flex flex-col dark:text-green-500 justify-center items-center"
+                            class="relative flex flex-col dark:text-green-500 justify-center items-start w-full"
                         >
                             <p
-                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light"
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light hover:text-green-500 dark:hover:text-gray-500 cursor-pointer"
                             >
                                 Din Somnang
                             </p>
@@ -294,9 +327,19 @@ import {
                             >
                                 Seller
                             </p>
+                            <div
+                                class="flex absolute right-0 flex-col dark:text-green-500 justify-center items-center"
+                            >
+                                <p
+                                    class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                                >
+                                    Heired:
+                                    <span class="text-[10px]">March 2023</span>
+                                </p>
+                            </div>
                         </div>
-                        <div
-                            class="flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
+                        <!-- <div
+                            class="hidden xl:flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
                         >
                             <p
                                 class="text-[10px] text-red-400 dark:text-red-500 font-light"
@@ -304,6 +347,72 @@ import {
                                 Heired:
                                 <span class="text-[10px]">March 2023</span>
                             </p>
+                        </div> -->
+                    </div>
+
+                    <div
+                        class="flex relative flex-row w-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
+                    >
+                        <div class="">
+                            <img
+                                class="object-cover w-14 h-12 rounded-full"
+                                src="https://www.unicef.org/cambodia/sites/unicef.org.cambodia/files/styles/hero_tablet/public/ED_UNICEF_BK_Dec%2005%2C%202017_0086.jpg.webp?itok=TuYJhpRA"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="relative flex flex-col dark:text-green-500 justify-center items-start w-full"
+                        >
+                            <p
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light hover:text-green-500 dark:hover:text-gray-500 cursor-pointer"
+                            >
+                                Din Somnang
+                            </p>
+                            <p
+                                class="text-sm text-gray-800 dark:text-green-500 opacity-90 font-light"
+                            >
+                                Seller
+                            </p>
+                            <div
+                                class="flex absolute right-0 flex-col dark:text-green-500 justify-center items-center"
+                            >
+                                <p
+                                    class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                                >
+                                    Heired:
+                                    <span class="text-[10px]">March 2023</span>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div
+                            class="hidden xl:flex absolute bottom-1 right-1 flex-col dark:text-green-500 justify-center items-center"
+                        >
+                            <p
+                                class="text-[10px] text-red-400 dark:text-red-500 font-light"
+                            >
+                                Heired:
+                                <span class="text-[10px]">March 2023</span>
+                            </p>
+                        </div> -->
+                    </div>
+
+                    <!-- Show more  -->
+                    <div
+                        class="flex relative flex-row w-full h-full gap-2 items-left dark:bg-gray-900 rounded-lg bg-gray-100 border dark:border-gray-900 shadow-md p-4"
+                    >
+                        <div
+                            class="flex dark:text-green-500 justify-center items-center w-full cursor-pointer space-x-1"
+                        >
+                            <p
+                                class="text-sm font-semibold text-gray-800 dark:text-green-500 opacity-90 hover:text-green-500 dark:hover:text-gray-500"
+                            >
+                                Show more
+                            </p>
+                            <div class="bg-gray-300/[0.5] rounded-full p-1">
+                                <MoreHorizontal
+                                    class="text-gray-500 dark:text-green-500"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
